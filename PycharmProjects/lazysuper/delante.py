@@ -68,8 +68,9 @@ def remove_not_front_rust():
 #    for filename in (os.path.join(r"U:\UNIBASE\image\DLGRSTS", location)):
 #       if filename.find("front") == -1:
 #            os.remove(os.path.join(r"U:\UNIBASE\image\DLGRSTS", location, filename))
+import os
 
-def rename_files_to_first_11(location):
+def rename11(location):
     for filename in os.listdir(os.path.join(r"U:\UNIBASE\image\DLGRSTS", location)):
         if filename.startswith("000"):
             os.rename(os.path.join(r"U:\UNIBASE\image\DLGRSTS", location, filename, ),
